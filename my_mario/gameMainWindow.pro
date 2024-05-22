@@ -18,8 +18,6 @@ CONFIG += c++11
 
 SOURCES += main.cpp\
     about_dialog.cpp \
-    database.cpp \
-    information.cpp \
     leaderboardwindow.cpp \
            mainwindow.cpp \
     randomgenerate.cpp \
@@ -56,8 +54,6 @@ SOURCES += main.cpp\
     levelcompletewindow.cpp
 
 HEADERS  += mainwindow.h \
-    database.h \
-    information.h \
     leaderboardwindow.h \
     randomgenerate.h \
             settings.h \
