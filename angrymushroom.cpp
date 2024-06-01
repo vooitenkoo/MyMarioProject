@@ -1,4 +1,4 @@
-#include "giantgoomba.h"
+#include "angrymushroom.h"
 #include <QPainter>
 
 GiantGoomba::GiantGoomba(QGraphicsItem *parent): QGraphicsItem(parent)

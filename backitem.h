@@ -1,5 +1,5 @@
-#ifndef BACKGROUNDITEM_H
-#define BACKGROUNDITEM_H
+#ifndef BACKITEM_H
+#define BACKITEM_H
 
 #include <QGraphicsPixmapItem>
 
@@ -12,4 +12,4 @@ public:
     virtual QPainterPath shape() const;
 };
 
-#endif // BACKGROUNDITEM_H
+#endif // BACKITEM_H

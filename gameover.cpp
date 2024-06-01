@@ -1,5 +1,5 @@
-#include "gameoverwindow.h"
-#include "ui_gameoverwindow.h"
+#include "gameover.h"
+#include "ui_gameover.h"
 
 GameOverWindow::GameOverWindow(QWidget *parent) :
     QDialog(parent),

@@ -1,4 +1,4 @@
-#include "backgrounditem.h"
+#include "backitem.h"
 
 BackgroundItem::BackgroundItem(const QPixmap &pixmap, QGraphicsItem * parent)
     : QGraphicsPixmapItem(pixmap, parent)

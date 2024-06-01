@@ -1,5 +1,5 @@
-#ifndef MYSCENE_H
-#define MYSCENE_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 #include <QGraphicsScene>
 #include <QTimer>
 #include <QAbstractAnimation>
@@ -321,4 +321,4 @@ private:
     LevelCompleteWindow *levelCompleteWindow;
 };
 
-#endif // MYSCENE_H
+#endif // MAINWINDOW_H

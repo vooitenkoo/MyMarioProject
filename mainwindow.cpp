@@ -1,4 +1,4 @@
-#include "myscene.h"
+#include "mainwindow.h"
 #include <QKeyEvent>
 #include <QScrollBar>
 #include <QPropertyAnimation>
@@ -6,7 +6,7 @@
 #include <QGraphicsPixmapItem>
 #include "player.h"
 #include "coin.h"
-#include "backgrounditem.h"
+#include "backitem.h"
 #include "castle.h"
 #include "goomba.h"
 #include "questbox.h"
@@ -18,7 +18,7 @@
 #include "coincounter.h"
 #include "wallplatform.h"
 #include "conveyor.h"
-#include "giantgoomba.h"
+#include "angrymushroom.h"
 #include "warptube.h"
 #include "stairblock.h"
 #include "bomb.h"
@@ -28,7 +28,7 @@
 #include "timer.h"
 #include "smallmario.h"
 #include "mushroom.h"
-#include "gameoverwindow.h"
+#include "gameover.h"
 #include "levelcompletewindow.h"
 
 MyScene::MyScene(QScrollBar*s , QObject *parent) :
@@ -414,7 +414,7 @@ void MyScene::initPlayField(){
     addItem(m_sky);
 
     //Game over screen
-    gameover = new BackgroundItem(QPixmap(":images/gameovers"));
+    gameover = new BackgroundItem(QPixmap(":images/"));
 
     //Course clear screen
     courseclear = new BackgroundItem(QPixmap(":images/c2"));
@@ -1508,7 +1508,7 @@ void MyScene::checkCollidingPiranha() {
             // Дальнейшая обработка значения времени...
 
             gameOverWindow = new GameOverWindow();
-            gameOverWindow->setFixedSize(557,355);
+            gameOverWindow->setFixedSize(650,400);
             gameOverWindow->setWindowFlags(((gameOverWindow->windowFlags() | Qt::CustomizeWindowHint)& ~Qt::WindowCloseButtonHint) );
             gameOverWindow->exec();
 
@@ -1530,7 +1530,7 @@ void MyScene::checkCollidingTurtle() {
             removeItem(m_player);
             m_gameTimer->stop();
             gameOverWindow = new GameOverWindow();
-            gameOverWindow->setFixedSize(557,355);
+            gameOverWindow->setFixedSize(650,400);
             gameOverWindow->setWindowFlags(((gameOverWindow->windowFlags() | Qt::CustomizeWindowHint)& ~Qt::WindowCloseButtonHint) );
             gameOverWindow->exec();
 
@@ -1573,7 +1573,7 @@ void MyScene::checkCollidingGiantGoomba() {
             removeItem(m_player);
             m_gameTimer->stop();
             gameOverWindow = new GameOverWindow();
-            gameOverWindow->setFixedSize(557,355);
+            gameOverWindow->setFixedSize(650,400);
             gameOverWindow->setWindowFlags(((gameOverWindow->windowFlags() | Qt::CustomizeWindowHint)& ~Qt::WindowCloseButtonHint) );
             gameOverWindow->exec();
         }
@@ -1597,7 +1597,7 @@ void MyScene::checkCollidingFlag() {
              removeItem(m_player);
              m_gameTimer->stop();
              levelCompleteWindow = new LevelCompleteWindow();
-             levelCompleteWindow->setFixedSize(557,355);
+             levelCompleteWindow->setFixedSize(650,400);
              levelCompleteWindow->setWindowFlags(((levelCompleteWindow ->windowFlags() | Qt::CustomizeWindowHint)& ~Qt::WindowCloseButtonHint) );
              levelCompleteWindow->exec();          
         }
@@ -1639,7 +1639,7 @@ void MyScene::checkCollidingSpiny() {
             addItem(gameover);          
             removeItem(m_player);       
             gameOverWindow = new GameOverWindow();
-            gameOverWindow->setFixedSize(557,355);
+            gameOverWindow->setFixedSize(650,400);
             gameOverWindow->setWindowFlags(((gameOverWindow->windowFlags() | Qt::CustomizeWindowHint)& ~Qt::WindowCloseButtonHint) );
             gameOverWindow->exec();
         }
@@ -1659,7 +1659,7 @@ void MyScene::checkCollidingRedTurtle() {
             addItem(gameover);          
             removeItem(m_player);           
             gameOverWindow = new GameOverWindow();
-            gameOverWindow->setFixedSize(557,355);
+            gameOverWindow->setFixedSize(650,400);
             gameOverWindow->setWindowFlags(((gameOverWindow->windowFlags() | Qt::CustomizeWindowHint)& ~Qt::WindowCloseButtonHint) );
             gameOverWindow->exec();
         }
@@ -1679,7 +1679,7 @@ void MyScene::checkCollidingBomb() {
             addItem(gameover);        
             removeItem(m_player);          
             gameOverWindow = new GameOverWindow();
-            gameOverWindow->setFixedSize(557,355);
+            gameOverWindow->setFixedSize(650,400);
             gameOverWindow->setWindowFlags(((gameOverWindow->windowFlags() | Qt::CustomizeWindowHint)& ~Qt::WindowCloseButtonHint) );
             gameOverWindow->exec();
         }

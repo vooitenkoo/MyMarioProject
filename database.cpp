@@ -6,7 +6,7 @@
 
 Database::Database() : db(QSqlDatabase::addDatabase("QSQLITE"))
 {
-    db.setDatabaseName("/Users/sagot/Documents/Snake-game/usersdb.db");
+    db.setDatabaseName("/Users/sagot/Documents/My_mario/usersdb.db");
     if (!db.open()) {
         qDebug() << "Failed to connect to the database";
     }

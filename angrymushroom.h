@@ -1,5 +1,5 @@
-#ifndef GIANTGOOMBA_H
-#define GIANTGOOMBA_H
+#ifndef ANGRYMUSHROOM_H
+#define ANGRYMUSHROOM_H
 #include <QGraphicsItem>
 #include <QPixmap>
 #include "objecttype.h"
@@ -19,4 +19,4 @@ private:
     int mCurrentFrame12;
     QPixmap mPixmap12;
 };
-#endif // GIANTGOOMBA_H
+#endif // ANGRYMUSHROOM_H

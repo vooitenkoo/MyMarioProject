@@ -18,13 +18,16 @@ CONFIG += c++11
 
 SOURCES += main.cpp\
     about_dialog.cpp \
+    angrymushroom.cpp \
+    backitem.cpp \
     database.cpp \
+    gameover.cpp \
     mainmenu.cpp \
+    mainwindow.cpp \
     randomgenerate.cpp \
            settings.cpp \
            title.cpp \
            view.cpp \
-    backgrounditem.cpp \
     bomb.cpp \
     brickplatform.cpp \
     castle.cpp \
@@ -32,9 +35,7 @@ SOURCES += main.cpp\
     coincounter.cpp \
     conveyor.cpp \
     flag.cpp \
-    giantgoomba.cpp \
     goomba.cpp \
-    myscene.cpp \
     notebox.cpp \
     piranha.cpp \
     player.cpp \
@@ -50,18 +51,20 @@ SOURCES += main.cpp\
     ara_sound_manager.cpp \
     smallmario.cpp \
     mushroom.cpp \
-    gameoverwindow.cpp \
     levelcompletewindow.cpp
 
 HEADERS  += \
+    angrymushroom.h \
+    backitem.h \
     database.h \
+    gameover.h \
     mainmenu.h \
+    mainwindow.h \
     objecttype.h \
     randomgenerate.h \
             settings.h \
             title.h \
             view.h \
-    backgrounditem.h \
     bomb.h \
     brickplatform.h \
     castle.h \
@@ -69,9 +72,7 @@ HEADERS  += \
     coincounter.h \
     conveyor.h \
     flag.h \
-    giantgoomba.h \
     goomba.h \
-    myscene.h \
     notebox.h \
     piranha.h \
     player.h \
@@ -88,13 +89,12 @@ HEADERS  += \
     ara_sound_manager.h \
     smallmario.h \
     mushroom.h \
-    gameoverwindow.h \
     levelcompletewindow.h
 
 FORMS    += \
     about_dialog.ui \
     ara_sound_manager.ui \
-    gameoverwindow.ui \
+    gameover.ui \
     levelcompletewindow.ui
 
 RESOURCES += \

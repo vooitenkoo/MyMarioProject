@@ -9,7 +9,7 @@
 #include <QRegularExpression>
 #include <QRegularExpressionMatch>
 #include "mainmenu.h"
-#include "myscene.h"
+#include "mainwindow.h"
 #include "randomgenerate.h"
 
 class View;
